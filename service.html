@@ -4,114 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../imges/favicon (2).ico" type="image/x-icon">
+    <link rel="stylesheet" href="service.css">
     <title>Services</title>
-    <style>
-      body {
-        background-color: azure;
-      }
-     .menubar{
-        /* background-color: brown; */
-        width: 70px;
-        margin: 30px 0px 0px 30px;
-    
-     }
-      .bar1,
-      .bar2,
-      .bar3 {
-        background-color: black;
-        height: 7px;
-        width: 50px;
-        margin: 10px;
-        transition: 0.4s;
-      }
-      .change .bar1 {
-        transform: translate(0, 15px) rotate(-45deg);
-        cursor: pointer;
-      }
-
-      .change .bar2 {
-        opacity: 0;
-      }
-
-      .change .bar3 {
-        transform: translate(0, -17px) rotate(45deg);
-      }
-      .portfolio .change{
-        display: none;
-      }
-      span {
-        color: coral;
-      }
-      h1 {
-        margin: 0;
-        font-size: 80px;
-      }
-      .portfolio {
-        /* margin-top: -100px; */
-        text-align: center;
-      }
-      .img2 > img {
-        height: 490px;
-        width: 300px;
-        margin: 10px;
-        border-radius: 20px;
-        transition: 0.5s;
-      }
-      .img2 > img:hover{
-        transform: scale(1.05);
-        transition: 0.5s;
-      }
-      a {
-        text-decoration: none;
-        transition: ease-in-out 0.3s;
-      }
-      .page1,
-      .page2,
-      .page3,
-      .page4,
-      .page5 {
-        margin: 60px;
-        font-size: 50px;
-      }
-      a:hover {
-        color: coral;
-        transition: ease-in-out 0.3s;
-      }
-      .allpages{
-        display: none;
-      }
-      .change .allpages {
-        margin-top: 30px;
-        height: 500px;
-        width: 1350px;
-        text-align: center;
-        display: inline-block;
-      }
-      @media screen and (max-width:896px){
-        body{
-          margin: 0;
-          padding: 0;
-        }
-        h1{
-          margin-top: 40px;
-          margin-bottom: 20px;
-          font-size: 55px;
-        }
-        .img2 > img{
-          margin: 20px;
-        }
-        #allpages{
-          /* margin: 0; */
-          /* padding: 0; */
-          width: 414px;
-          /* text-align: center; */
-        }
-        #menubar{
-            margin: 0;
-            padding: 0;
-        }
-      }
-    </style>
   </head>
   <body>
     <div>
@@ -146,12 +40,6 @@
         <div class="page5"><a href="./download.html">Download Resume</a></div>
       </div>
     </div>
-    <script>
-      function menubar(x) {
-        x.classList.toggle("change");
-        document.getElementById("alldiv").classList.toggle("change");
-          document.getElementById('displayall').classList.toggle('change')
-      }
-    </script>
+  <script src="service.js"></script>
   </body>
 </html>
